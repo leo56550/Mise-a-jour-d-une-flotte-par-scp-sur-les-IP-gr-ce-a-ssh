@@ -54,7 +54,7 @@ class Ip_thread(Thread):
 	def run(self):
         
 		self.ssh = paramiko.SSHClient()
-		self.key = paramiko.RSAKey.from_private_key_file("holotov")
+		self.key = paramiko.RSAKey.from_private_key_file("??????")
 		self.ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         
 		print("Thread started for ip = "+ self.ip)
